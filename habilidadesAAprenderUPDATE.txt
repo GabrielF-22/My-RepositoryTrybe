@@ -1,3 +1,0 @@
-unix
-bash
-e mais outras habilidades da trybe
