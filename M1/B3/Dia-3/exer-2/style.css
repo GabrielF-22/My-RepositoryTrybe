@@ -1,0 +1,37 @@
+.super-mario {
+    width: 200px;
+    position: absolute;
+    left: 20px;
+  }
+  
+  .goomba {
+    /*Bichinho pequeno*/
+    width: 100px;
+    position: absolute;
+    top: 370px;
+    left: 70px;
+  }
+  
+  .baloon {
+    position: absolute;
+    top: 60px;
+    left: 400px;
+    z-index: 1;
+  }
+  
+  .speech {
+    /* FRASE */
+    font-size: 25px;
+    position: absolute;
+    top: 90px;
+    left: 420px;
+    z-index: 2;
+  }
+  
+  .bowser {
+    /*TARTARUGA MALVADA */
+    width: 200px;
+    position: absolute;
+    top: 200px;
+    left: 700px;
+  }
