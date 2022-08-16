@@ -1,0 +1,14 @@
+h1, p {
+    text-align: center ;
+}
+
+li:hover {
+    background-color: rgb(108, 226, 137);
+}
+
+li:active {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    list-style: none;
+    text-align: center;
+}
