@@ -1,7 +1,5 @@
 div:hover {
-    border-width: 5px;
-    border-style: solid;
-    border-color: black;
+    border: 5px solid black
 }
 
 h3 {
