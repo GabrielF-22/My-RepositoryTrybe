@@ -1,4 +1,8 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .img_bicho{
-    height: 600px;
-    width: 600px;
+    height: 400px;
+    width: 400px;
 }
