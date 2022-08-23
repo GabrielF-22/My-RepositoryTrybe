@@ -6,7 +6,7 @@ for (let index = 0; index < array.length; index +=1) {
         maiorPalavra = array[index]
     }
 }
-console.log(maiorPalavra)
+console.log(`A maior palavra é: ${maiorPalavra}`)
 
 //Menor Palavra
 
