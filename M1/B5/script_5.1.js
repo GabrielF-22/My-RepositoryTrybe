@@ -1,32 +1,44 @@
-const cabecalho = document.getElementById('header-container');
-cabecalho.style.backgroundColor = 'green';
-
-// Quadro 1
-const quadro1 = document.getElementsByClassName('emergency-tasks') [0];
-quadro1.style.backgroundColor = 'pink';
-
-// H3
-const titulo3 = document.querySelectorAll('.emergency-tasks h3');
-for (let i = 0; i < titulo3.length; i += 1) {
-  titulo3[i].style.backgroundColor = 'black';
+// 1
+function alteracorCabecalho (cor) {
+  document.getElementById('header-container').style.backgroundColor = cor;
 }
+alteracorCabecalho ('green');
 
-// Quadro 2
-const quadro2 = document.getElementsByClassName('no-emergency-tasks') [0];
-quadro2.style.backgroundColor = 'blue';
-
-//H3 - Quadro2
-
-const titulo3q = document.querySelectorAll('.no-emergency-tasks h3');
-for (let index = 0; index < titulo3q.length; index += 1) {
-  titulo3q[index].style.backgroundColor = 'black';
+// 2
+function alteraCorRodape (cor) {
+  document.getElementById('footer-container').style.backgroundColor = cor
 }
+alteraCorRodape ('green');
 
-// Parte de baixo
-const rodape = document.getElementById('footer-container');
-rodape.style.backgroundColor = 'green'
+// 3
+function alteraCorQ1 (cor) {
+  document.getElementsByClassName('emergency-tasks')[0].style.backgroundColor = cor;
+}
+alteraCorQ1 ('blue');
 
+// 4
+function alteraCorQ2 (cor) {
+  document.getElementsByClassName('no-emergency-tasks')[0].style.backgroundColor = cor;
+}
+alteraCorQ2 ('red');
 
+// 5
+function corh31 (cor) {
+  const h31 = document.querySelectorAll('.emergency-tasks h3');
+  for (let index = 0; index < h31.length; index += 1) {
+    h31[index].style.backgroundColor = cor;
+  }
+}
+corh31 ('black');
+
+// 6
+function corh32 (cor) {
+  const h32 = document.querySelectorAll('.emergency-tasks h3');
+  for (let index = 0; index < h32.length; index += 1) {
+    h32[index].style.backgroundColor = cor;
+  }
+}
+corh32 ('black');
 
 // RESOLUÇÃO
 
