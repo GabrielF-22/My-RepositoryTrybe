@@ -37,6 +37,24 @@
     // console.log(filhoElementoOndeVoceEsta)
 
     // 3
+    const primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
+    // console.log(primeiroFilhoDoFilho)
+    const filhoPrimeiroFilhoDoFilho = document.createElement('p');
+    filhoPrimeiroFilhoDoFilho.id = 'filhoPrimeiroFilhoDoFilho';
+    primeiroFilhoDoFilho.appendChild(filhoPrimeiroFilhoDoFilho);
+    // console.log(filhoPrimeiroFilhoDoFilho)
+
+    // 4
+    const acessoTerceiroFilho = filhoPrimeiroFilhoDoFilho.parentNode.parentNode.nextSibling.nextSibling
+    console.log(acessoTerceiroFilho)
+
+    //Modo do gabarito - 4
+    // const terceiroFilho = filhoPrimeiroFilhoDoFilho
+    //   .parentElement // primeiroFilhoDoFilho
+    //   .parentElement // elementoOndeVoceEsta
+    //   .nextElementSibling; // terceiroFilho
+    // console.log(terceiroFilho);
     
+
 
   </script>
