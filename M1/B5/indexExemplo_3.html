@@ -27,24 +27,32 @@
     // console.log(pai);
     const listaElementosPai = pai.childNodes;
     console.log(listaElementosPai.length)
-    for (let index = 0; index < listaElementosPai.length; index += 1){
-      const itemAtualDaLista = listaElementosPai[index];
-      console.log(itemAtualDaLista)
-      console.log(itemAtualDaLista.id)
-      if(itemAtualDaLista.id !== 'elementoOndeVoceEsta'){
-        console.log(itemAtualDaLista)
-        itemAtualDaLista.remove()
-      }
-    }
+
+    
+    const terceiroFilho = document.getElementById('terceiroFilho');
+    terceiroFilho.remove();
+
+
+
+
+    // for (let index = 0; index < listaElementosPai.length; index += 1){
+    //   const itemAtualDaLista = listaElementosPai[index];
+    //   console.log(itemAtualDaLista)
+    //   console.log(itemAtualDaLista.id)
+    //   if(itemAtualDaLista.id !== 'elementoOndeVoceEsta'){
+    //     console.log(itemAtualDaLista)
+    //     itemAtualDaLista.remove()
+    //   }
+    // }
 
     // for (let index = pai.childNodes.length - 1; index >= 0; index -= 1) {
     //   const currentChildren = pai.childNodes[index];
     //   console.log(currentChildren)
     //   console.log(currentChildren.id)
-    // //   if (currentChildren.id !== 'elementoOndeVoceEsta') {
-    // //     console.log(currentChildren)
-    // //     currentChildren.remove();
-    // //   }
+    //    if (currentChildren.id !== 'elementoOndeVoceEsta') {
+    //    console.log(currentChildren)
+    //    currentChildren.remove();
+    // }
     // }
 
   </script>
