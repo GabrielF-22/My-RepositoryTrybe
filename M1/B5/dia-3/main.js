@@ -11,30 +11,52 @@ const myWebpage = document.getElementById('my-spotrybefy');
 
 // 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
 // 2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
-function colocaTiraTech (event) {
-  const elementoTech = document.querySelector('.tech');
-  elementoTech.classList.remove('tech');
+function adicionaClass (event) {
+  const elementTech = document.querySelector('.tech');
+  elementTech.classList.remove('tech');
   event.target.classList.add('tech');
-  input.value = '';
+  input.value='';
 }
+firstLi.addEventListener('click', adicionaClass);
+secondLi.addEventListener('click', adicionaClass);
+thirdLi.addEventListener('click', adicionaClass);
 
-firstLi.addEventListener('click', colocaTiraTech);
-secondLi.addEventListener('click', colocaTiraTech);
-thirdLi.addEventListener('click', colocaTiraTech);
+
+//RESPOSTA DO GABARITO
+// function colocaTiraTech (event) {
+//   const elementoTech = document.querySelector('.tech');
+//   elementoTech.classList.remove('tech');
+//   event.target.classList.add('tech');
+//   input.value = '';
+// }
+
+// firstLi.addEventListener('click', colocaTiraTech);
+// secondLi.addEventListener('click', colocaTiraTech);
+// thirdLi.addEventListener('click', colocaTiraTech);
 
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
-  input.addEventListener('input', function(event){
+  input.addEventListener('keyup', function(event){
     const elementoTech = document.querySelector('.tech');
     elementoTech.innerText = event.target.value;
   })
-
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 // 4.1. Que tal redirecionar para seu portfólio?
+myWebpage.addEventListener('dblclick', function newTAB(){
+  window.open("https://www.google.com.br/")
+});
 
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
+myWebpage.addEventListener('mouseover', function alteraCor(event){
+  event.target.style.backgroundColor = 'black';
+})
+
+myWebpage.addEventListener('mouseout', function saiCor (event){
+  event.target.style.backgroundColor = '';
+})
+
 
 // Segue abaixo um exemplo do uso de event.target:
 
